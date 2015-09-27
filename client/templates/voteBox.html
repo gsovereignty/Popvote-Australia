@@ -1,6 +1,9 @@
 <template name="voteBox">
+{{#each voteTitle}}
 <div id="votebox">
-<div class="voteheader">{{voteTitle}}</div>
+<div class="voteheader">{{title}}<br />Author:&nbsp;{{author}}&nbsp;on:&nbsp;{{creationdate}}</div>
+
 <div class="clickvote"><a href="#">&#128077;</a>&nbsp;&nbsp;<a href="#">&#128078;</a>&nbsp;&nbsp;<a href="#">&#9872;</a></div>
 </div>
+{{/each}}
 </template>

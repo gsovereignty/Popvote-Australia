@@ -1,11 +1,5 @@
 Template.voteBox.helpers({
-	'voteTitle': function() {
-		return votes["titleSource"];
-	},
-	'titleLength': function() {
-		return votes.titleSource.length;
-	}
+	voteTitle: function() {
+return VotesCollection.find();
+		}
 });
-
-votes = new Object();
-votes.titleSource = "Foreign Acquisitions and Takeovers Fees Imposition Foreign Acquisitions and Takeovers Fees Imposition Bill 2015";
