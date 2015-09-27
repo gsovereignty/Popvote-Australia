@@ -1,0 +1,9 @@
+<template name="byVotes">
+{{> voteBox}}
+{{> testArea}}
+{{> insertVotesCollectionForm}}
+</template>
+
+<template name="testArea">
+{{#each testAreaVotes}}{{title}}<br />Author:&nbsp;{{author}}&nbsp;on:&nbsp;{{creationdate}}<hr />{{/each}}
+</template>

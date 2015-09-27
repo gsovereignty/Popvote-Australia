@@ -1,0 +1,3 @@
+<template name="createVote">
+{{> quickForm collection="VotesCollection" id="insertVoteForm" type="insert"}}
+</template>
