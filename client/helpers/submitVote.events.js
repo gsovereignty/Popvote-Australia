@@ -3,7 +3,14 @@ Template.submitVote.events({ 'submit form': function(e) {
     var vote = {
         title: $(e.target).find('[name=title]').val()
     };
-    vote._id = VotesCollection.insert(vote);
-    Router.go('byVotes');
+
+    Meteor.call('voteInsert', vote, function(error, result) { // display the error to the user and abort
+        if (error)
+            return alert(error.reason);
+        Router.go('byVotes');
+    });
+
+
+
 }
 });
