@@ -1,9 +1,0 @@
-<template name="voteBox">
-{{#each voteTitle}}
-<div id="votebox">
-<div class="voteheader">{{title}}</div><div class="hidebutton">&#10006;</div>
-
-<div class="clickvote"><a href="#">READ MORE</a>{{#if currentUser}}&nbsp;|&nbsp;<a href="#">VOTE YES</a>&nbsp;|&nbsp;<a href="#">VOTE NO</a>&nbsp;|&nbsp;<a href="#">REPORT</a>{{else}}&nbsp;Please log in to vote.{{/if}}</div>
-</div>
-{{/each}}
-</template>
