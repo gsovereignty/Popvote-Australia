@@ -1,10 +1,68 @@
-a:link {
+
+/*---General Styling---*/
+#yield {margin-left: 5px;margin-right: 5px;border-style: solid;border-width:1px;width:90%;}
+#votebox {
+    position:relative;
+    width:400px;
+    height: 100px;
+    border-style: none;
+    border-width:1px;
+    border-radius: 3px;
+    margin-bottom:20px;
+    background: linear-gradient(to right,  #FFF0B9 0%,#FFF0B9 18%,#F5F3EE 40%,#F5F3EE 60%,#FFF0B9 82%,#FFF0B9 100%);
+    box-shadow: 2px 3px 2px #443500;
+}  a:link {
     text-decoration: none;
+}  #votebox:hover {
+    background: linear-gradient(to right,  #FFE072 0%,#FFF0B9 18%,#F5F3EE 40%,#F5F3EE 60%,#FFF0B9 82%,#FFE072 100%);
+    box-shadow: 2px 3px 2px #404040;
 }
+/*---Text---*/
+div.title {margin-left:10px;margin-right:10px;padding-top:10px;font-size:14px;}
 
-#votebox {position:relative;width:400px; height: 100px;border-style: none;border-width:1px;border-radius: 10px;margin-bottom:20px;background: cornsilk;}
-#votebox:hover {background: powderblue;}
-div.hidebutton {position: absolute;top:2px; right: 6px;}
-div.voteheader {margin-left:10px;margin-right:10px;padding-top:10px;font-size:14px;}
+/*---Action Icons Normal---*/
+div.info {opacity: 0.5;
+    position: absolute;
+    bottom:4px;
+    left: 80px;
+    font-size: 18px;}
+div.comments {opacity: 0.5;
+    position: absolute;
+    bottom:6px;
+    left: 110px;
+    font-size: large;}
+div.report {opacity: 0.5;
+    position: absolute;
+    bottom:6px;
+    left: 148px;
+    font-size: 18px;}
+div.favourite {opacity: 0.5;
+    position: absolute;
+    bottom:4px;
+    right: 80px;
+    font-size: 21px;}
 
-div.clickvote {position:absolute;text-align:right;bottom:5px;right:10px; font-size: small;}
+/*---Action Icons Hover---*/
+div.info:hover {opacity: 1;
+    }
+div.comments:hover {opacity: 1;
+    }
+div.report:hover {opacity: 1;
+    }
+div.favourite:hover {opacity: 1;
+    }
+
+/*---Voting Tabs/Sections/Swipe---*/
+div.voteyes {
+    position:absolute;
+    bottom: 0;right:16px;
+    font-size: 12px;
+    text-align: center;
+    width:40px;
+}  div.voteno {position:absolute;
+    bottom: 0;
+    left:16px;
+    font-size: 12px;
+    text-align: center;
+    width:40px;
+}
