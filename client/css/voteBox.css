@@ -41,6 +41,11 @@ div.favourite {opacity: 0.5;
     bottom:4px;
     right: 80px;
     font-size: 21px;}
+div.social {opacity: 0.5;
+    position: absolute;
+    bottom:4px;
+    right: 110px;
+    font-size: 18px;}
 
 /*---Action Icons Hover---*/
 div.info:hover {opacity: 1;
