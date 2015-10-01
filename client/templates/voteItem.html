@@ -1,7 +1,12 @@
 <template name="voteItem">
 <div id="votebox">
-    <div class="voteheader">{{title}}</div><div class="hidebutton">&#10006;</div>
-
-    <div class="clickvote"><a href="#">READ MORE</a>{{#if currentUser}}&nbsp;|&nbsp;<a href="#">VOTE YES</a>&nbsp;|&nbsp;<a href="#">VOTE NO</a>&nbsp;|&nbsp;<a href="#">REPORT</a>{{else}}&nbsp;Please log in to vote.{{/if}}</div>
+    <div class="title">{{title}}</div>
+    <div class="favourite">&#9734;</div>
+    <div class="comments"><i class="fa fa-comment-o"></i> </div>
+    <div class="info"><a href="{{pathFor 'voteInfoPage'}}"><i class="fa fa-info"></i></a></div>
+    <div class="report"> <img src="cop.png" width="20px;" height="auto;" /></div>
+    <div class="voteno"><a href="#">VOTE NO</a></div>
+    <div class="voteyes"><a href="#">VOTE YES</a></div>
 </div>
+
 </template>
