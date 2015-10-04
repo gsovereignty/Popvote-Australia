@@ -1,0 +1,38 @@
+#authordetails {
+    display: inline-block;
+    border-style: solid;
+    border-width: thin;
+    margin-bottom: 10px;
+
+}
+
+#votecounts {
+    display: inline-block;
+    border-style: solid;
+    border-width: thin;
+    margin-bottom: 10px;
+}
+
+#votejurisdiction {
+    display: inline-block;
+    border-style: solid;
+    border-width: thin;
+    margin-bottom: 10px;
+}
+
+#officialdata {
+    display: inline-block;
+    border-style: solid;
+    border-width: thin;
+    margin-bottom: 10px;
+}
+
+#votedescription {
+    display: inline-block;
+    border-style: solid;
+    border-width: thin;
+    margin-bottom: 10px;
+}
+
+div.controls input {margin-bottom: 5px; width: 600px;}
+div.controls textarea {margin-bottom: 5px; width: 600px;}

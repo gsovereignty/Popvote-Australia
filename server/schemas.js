@@ -6,6 +6,29 @@ Schemas.VotesCollection = new SimpleSchema({
         label: "Title",
         max: 360
     },
+    jurisdiction: {
+        type: String,
+        label: "Jurisdiction",
+        max: 40
+    },
+    officiallink: {
+        type: String,
+        label: "Official Link",
+        max: 200,
+        optional: true
+    },
+    problem: {
+        type: String,
+        label: "Problem",
+        max: 2000,
+        optional: true
+    },
+    votebody: {
+        type: String,
+        label: "Problem",
+        max: 10000,
+        optional: true
+    },
     userID: {
         type: String,
         label: "User ID",
