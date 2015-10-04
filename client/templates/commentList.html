@@ -1,0 +1,14 @@
+<template name="commentList">
+    {{> voteItem}}
+    {{#if currentUser}}
+        {{> commentSubmit}}
+    {{else}}
+        <p>Please log in to leave a comment.</p>
+    {{/if}}
+
+<a href="#">POPULAR</a> | <a href="#">NEW</a> | <a href="#">YOUR FAVOURITE PEOPLE</a>
+        {{#each comments}}
+           <div class="comment"> {{> commentItem}}</div>
+        {{/each}}
+
+</template>

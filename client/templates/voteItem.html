@@ -2,14 +2,13 @@
 <div id="votebox">
     <div class="title">{{title}}</div>
     <div class="favourite">&#9734;</div>
-    <div class="comments"><i class="fa fa-comment-o"></i> </div>
+    <div class="comments"><a href="{{pathFor 'commentList'}}"><i class="fa fa-comment-o"></i></a> </div>
     <div class="info"><a href="{{pathFor 'voteInfoPage'}}"><i class="fa fa-info"></i></a></div>
     <div class="report"> <img src="cop.png" width="20px;" height="auto;" /></div>
     <div class="voteno"><a href="#">VOTE NO</a></div>
     <div class="voteyes"><a href="#">VOTE YES</a></div>
     <div class="social">
-        <a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-        <a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+        {{>shareit}}
     </div>
 </div>
 

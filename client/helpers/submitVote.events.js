@@ -2,6 +2,7 @@ Template.submitVote.events({ 'submit form': function(e) {
     e.preventDefault();
     var vote = {
         title: $(e.target).find('[name=title]').val(),
+        summary: $(e.target).find('[name=summary]').val(),
         jurisdiction: $(e.target).find('[name=jurisdiction]').val(),
         officiallink: $(e.target).find('[name=officiallink]').val(),
         problem: $(e.target).find('[name=problem]').val(),
