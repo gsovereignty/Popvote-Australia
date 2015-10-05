@@ -63,11 +63,11 @@ div.voteyes {
     bottom: 0;right:16px;
     font-size: 12px;
     text-align: center;
-    width:40px;
+    width:58px;
 }  div.voteno {position:absolute;
     bottom: 0;
     left:16px;
     font-size: 12px;
     text-align: center;
-    width:40px;
+    width:58px;
 }
