@@ -1,0 +1,19 @@
+<template name="signup">
+    <form class="main form page">
+        <textarea name="usertext" id="usertext" value="" placeholder="Paste text here." class="form-control" rows="6"></textarea>
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+    </form>
+   <h2>Your Registered Details</h2>
+   <div id="userdata">
+    <b>Given Name(s):</b> {{data 'givenName'}}<br />
+    <b>Family Name:</b> {{data 'familyName'}}<br />
+    <b>Locality:</b> {{data 'locality'}}<br />
+    <b>Local Council:</b> {{data 'localCouncil'}}<br />
+    <b>Federal Division:</b> {{data 'federalDivision'}}<br />
+    <b>State District:</b> {{data 'stateDistrict'}}<br />
+    <b>Local Ward</b>: {{data 'ward'}}<br />
+   </div>
+
+
+
+</template>
