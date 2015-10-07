@@ -4,8 +4,7 @@ Template.commentList.helpers({ comments: function() {
 });
 
 Template.commentItem.events({
-    'click .like': function(e) {
-        e.preventDefault();
+    'click .like': function() {
         Meteor.call('likeComment', this._id);
     }
 
