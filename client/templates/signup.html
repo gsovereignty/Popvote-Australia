@@ -1,10 +1,24 @@
 <template name="signup">
+    <div name="aeciframe" id="aeciframe" style="display: {{display 'aeciframe'}}">
+        Please verify your electoral enrollment with the Australian Electoral Commission below:
+        <div style="border: solid; border-width: 1px; overflow: hidden; width: 620px;">
+            <iframe scrolling="no" src="https://oevf.aec.gov.au/" style="border: 0px none; margin-left: -20px; height: 1000px; margin-top: -216px; width: 990px;">
+            </iframe>
+            <div class="btn btn-primary" id="copied" style="float: right;">Next</div>
+        </div>
+
+    </div>
+
+    <div id="aecdatainput" style="display: {{display 'aecinput'}}">
     <form class="main form page">
         <textarea name="usertext" id="usertext" value="" placeholder="Paste text here." class="form-control" rows="6"></textarea>
-        <input type="submit" value="Submit" class="btn btn-primary"/>
+        <div class="btn btn-primary" id="p1" style="float: left; margin-right: 10px;">Go Back</div><input type="submit" value="Submit" class="btn btn-primary"/>
     </form>
-   <h2>Your Registered Details</h2>
-   <div id="userdata">
+
+    </div>
+    <div id="dispayaecdata" style="display: {{display 'aecconfirm'}}">
+        <h2>Your Registered Details</h2>
+        <div id="userdata">
     <b>Given Name(s):</b> {{data 'givenName'}}<br />
     <b>Family Name:</b> {{data 'familyName'}}<br />
     <b>Locality:</b> {{data 'locality'}}<br />
@@ -12,8 +26,10 @@
     <b>Federal Division:</b> {{data 'federalDivision'}}<br />
     <b>State District:</b> {{data 'stateDistrict'}}<br />
     <b>Local Ward</b>: {{data 'ward'}}<br />
-   </div>
-
-
+            Your details have been registered. You may now vote on PopVote.<br />
+            Your details will be further verified by a Justice of the Peace.
+        </div>
+        <div class="btn btn-primary" id="done" style="float: right;">Start Voting</div>
+    </div>
 
 </template>

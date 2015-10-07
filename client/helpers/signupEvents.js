@@ -1,5 +1,25 @@
+Template.signup.rendered = function() {
+    if(!this._rendered) {
+        this._rendered = true;
+        Session.set('aecinput', 'none');
+        Session.set('aecconfirm', 'none');
+        Session.set('aeciframe', 'block');
+
+    }
+}
 
 Template.signup.events({
+    'click #copied': function () {
+       Session.set('aeciframe', 'none');
+       Session.set('aecinput', 'block');
+   },
+    'click #done': function () {
+       Router.go('votesList');
+    },
+    'click #p1': function () {
+        Session.set('aeciframe', 'block');
+        Session.set('aecinput', 'none');
+    },
 
     'submit form': function(e) {
         e.preventDefault();
@@ -39,6 +59,9 @@ Template.signup.events({
                 Session.set('ward', temp[1].trim());
             };
 
+            Session.set('aecinput', 'none');
+            Session.set('aecconfirm', 'block');
+
 
 
         }; } else {alert("The text you pasted did not contain the correct details. Please try again.")};
@@ -47,8 +70,17 @@ Template.signup.events({
 }})
 
 Template.signup.helpers({
-data: function (variable) {
-    return Session.get(variable);
-}
 
-})
+    data: function (variable) {
+    return Session.get(variable);
+    },
+
+    display: function(block) {
+        return Session.get(block);
+    }
+
+
+
+
+
+});
