@@ -5,11 +5,13 @@
             <div class="form-group">
                 <label class="control-label" for="title"></label>
                 <div class="controls">
-                    <div id="votetype"><div id="parliament" class="btn btn-default">Federal Parliament</div> <div id="mystate" class="btn btn-default">My State</div> <div id="mycouncil" class="btn btn-default">My Council</div> </div>
-                    <h4>This vote will affect: {{data 'juris'}}</h4>
+                    <div id="votetype"><div id="parliament" class="btn {{data 'parliamentButton'}}">Federal Parliament</div> <div id="mystate" class="btn {{data 'stateButton'}}">My State</div> <div id="mycouncil" class="btn {{data 'councilButton'}}">My Council</div> </div>
                     <div id="official" class="btn btn-default">This is an official vote</div> <div id="unofficial" class="btn btn-default">This is my own idea</div>
                     <h4>{{data 'voteofficial'}}</h4>
+
                     <input style="display:{{data 'officialandunofficial'}}" maxlength="175" name="title" id="title" type="text" value="" placeholder={{data 'titleplaceholder'}} class="form-control"/>
+                    <input style="display:{{data 'officialandunofficial'}}" maxlength="30" name="jurisdiction" id="jurisdiction" type="text" value="{{data 'juris'}}" class="form-control" readonly/>
+
                     <input style="display:{{data 'official'}}" maxlength="200" name="officiallink" id="officiallink" type="text" value="" placeholder={{data 'linkplaceholder'}} class="form-control"/>
                     <textarea style="display:{{data 'notofficial'}}" name="problem" id="problem" value="" placeholder="What is the problem that will be solved by this vote, or why does a decision need to be made?" class="form-control" rows="4"></textarea>
                     <textarea style="display:{{data 'officialandunofficial'}}" name="votebody" id="votebody" value="" placeholder={{data 'detailsplaceholder'}} class="form-control" rows="6"></textarea>
