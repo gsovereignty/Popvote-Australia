@@ -10,3 +10,12 @@ Template.voteItem.events({
     },
 
 });
+
+Template.voteItem.helpers({
+    officialStatus: function(){
+        if (this.isofficial === true) {
+            return "(Official)";
+        } else {}
+    }
+});
+

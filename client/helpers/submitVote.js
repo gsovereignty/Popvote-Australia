@@ -27,6 +27,8 @@ Template.submitVote.events({
         Session.set('parliamentButton', 'btn-primary');
         Session.set('stateButton', 'btn-default');
         Session.set('councilButton', 'btn-default');
+        jurisname = "The Australian Nation";
+        juristype = "national";
     },
     'click #mystate': function () {
         Session.set('juris', 'myState'); //replace with this.userID.profile.state or something
@@ -34,6 +36,8 @@ Template.submitVote.events({
         Session.set('stateButton', 'btn-primary');
         Session.set('parliamentButton', 'btn-default');
         Session.set('councilButton', 'btn-default');
+        jurisname = Meteor.user().profile.state;
+        juristype = "state";
     },
     'click #mycouncil': function () {
         Session.set('juris', 'myCouncil'); //replace with this.userID.profile.council or something
@@ -41,6 +45,8 @@ Template.submitVote.events({
         Session.set('councilButton', 'btn-primary');
         Session.set('parliamentButton', 'btn-default');
         Session.set('stateButton', 'btn-default');
+        jurisname = Meteor.user().profile.council;
+        juristype = "council";
     },
     'click #official': function () {
         //DISPLAY AND HIDE FIELDS
@@ -81,11 +87,12 @@ Template.submitVote.events({
     e.preventDefault();
     var vote = {
         title: $(e.target).find('[name=title]').val(),
-        jurisdiction: $(e.target).find('[name=jurisdiction]').val(),
         officiallink: $(e.target).find('[name=officiallink]').val(),
         problem: $(e.target).find('[name=problem]').val(),
         votebody: $(e.target).find('[name=votebody]').val(),
-        isofficial: official
+        isofficial: official,
+        juristype: juristype,
+        jurisname: jurisname
 
     };
 
@@ -109,5 +116,6 @@ Template.submitVote.helpers({
 
     display: function(block) {
         return Session.get(block);
-    }
+    },
+    state: function (){return Meteor.user().profile.state;}
 });

@@ -1,24 +1,31 @@
 
 /*---General Styling---*/
 #yield {margin-left: 5px;margin-right: 5px;border-style: solid;border-width:1px;width:90%;}
+
+/*---VoteBox---*/
 #votebox {
+    filter: brightness(50%);
     position:relative;
     width:400px;
-    height: 110px;
+    height: 130px;
     border-style: none;
     border-width:1px;
     border-radius: 3px;
     margin-bottom:20px;
-    background: linear-gradient(to right,  #FFF0B9 0%,#FFF0B9 18%,#F5F3EE 40%,#F5F3EE 60%,#FFF0B9 82%,#FFF0B9 100%);
-    box-shadow: 2px 3px 2px #443500;
+
 }  a:link {
     text-decoration: none;
 }  #votebox:hover {
-    background: linear-gradient(to right,  #FFE072 0%,#FFF0B9 18%,#F5F3EE 40%,#F5F3EE 60%,#FFF0B9 82%,#FFE072 100%);
     box-shadow: 2px 3px 2px #404040;
 }
+
+    .national {background: linear-gradient(to right,  #90C3D4 0%,#90C3D4 18%,#F5F3EE 40%,#F5F3EE 60%,#90C3D4 82%,#90C3D4 100%);}
+    .state {background: linear-gradient(to right,  #A1D490 0%,#A1D490 18%,#F5F3EE 40%,#F5F3EE 60%,#A1D490 82%,#A1D490 100%);}
+    .council {background: linear-gradient(to right,  #FFF0B9 0%,#FFF0B9 18%,#F5F3EE 40%,#F5F3EE 60%,#FFF0B9 82%,#FFF0B9 100%);}
+
 /*---Text---*/
-div.title {margin-left:10px;margin-right:10px;padding-top:10px;font-size:14px;}
+div.title {margin-left:10px;margin-right:10px;padding-top:20px;font-size:14px;}
+div.meta {float:right;font-size: small;margin-right: 4px;}
 
 /*---Action Icons Normal---*/
 div.info {opacity: 0.5;
