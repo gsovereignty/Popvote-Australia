@@ -14,6 +14,8 @@ Template.submitVote.rendered = function() {
         Session.set('stateButton', 'btn-default');
         Session.set('councilButton', 'btn-default');
         Session.set('parliamentButton', 'btn-default');
+        Session.set('officialButton', 'btn-default');
+        Session.set('nonOfficialButton', 'btn-default');
 
     }
 };
@@ -53,6 +55,9 @@ Template.submitVote.events({
         //METADATA
         Session.set('isofficial', true);
         official = true;
+        //BUTTONS
+        Session.set('officialButton', 'btn-primary');
+        Session.set('nonOfficialButton', 'btn-default');
 
     },
     'click #unofficial': function () {
@@ -67,6 +72,9 @@ Template.submitVote.events({
         //METADATA
         Session.set('isofficial', false);
         official = false;
+        //BUTTONS
+        Session.set('officialButton', 'btn-default');
+        Session.set('nonOfficialButton', 'btn-primary');
 
     },
     'submit form': function(e) {
