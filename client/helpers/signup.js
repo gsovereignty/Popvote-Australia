@@ -4,6 +4,7 @@ Template.signup.rendered = function() {
         Session.set('aecinput', 'none');
         Session.set('aecconfirm', 'none');
         Session.set('aeciframe', 'block');
+        Session.set('finalPage', 'none');
 
     }
 }
@@ -13,9 +14,6 @@ Template.signup.events({
        Session.set('aeciframe', 'none');
        Session.set('aecinput', 'block');
    },
-    'click #done': function () {
-       Router.go('votesList');
-    },
     'click #p1': function () {
         Session.set('aeciframe', 'block');
         Session.set('aecinput', 'none');
@@ -67,7 +65,15 @@ Template.signup.events({
         }; } else {alert("The text you pasted did not contain the correct details. Please try again.")};
 
 
-}})
+},
+    'click #toLast': function () {
+        Session.set('finalPage', 'block');
+        Session.set('aecinput', 'none');
+        Session.set('aecconfirm', 'none');
+        Session.set('aeciframe', 'none');
+
+    }
+});
 
 Template.signup.helpers({
 
@@ -78,9 +84,4 @@ Template.signup.helpers({
     display: function(block) {
         return Session.get(block);
     }
-
-
-
-
-
 });

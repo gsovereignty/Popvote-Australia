@@ -1,10 +1,13 @@
 Template.submitVote.rendered = function() {
     if(!this._rendered) {
         this._rendered = true;
+        //Initialize Divs
         Session.set('official', 'none');
         Session.set('notofficial', 'none');
         Session.set('officialandunofficial', 'none');
         Session.set('aeciframe', 'block');
+
+        //Set Display Text
         Session.set('juris', 'waiting for your selection');
         Session.set('voteofficial', 'Waiting for your selection');
         Session.set('titleplaceholder', '');
