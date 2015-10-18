@@ -16,6 +16,12 @@ Template.voteItem.helpers({
         if (this.isofficial === true) {
             return "(Official)";
         } else {}
+    },
+    yesVote: function() {
+        return this.votes.yesVote;
+    },
+    noVote: function() {
+        return this.votes.noVote;
     }
 });
 

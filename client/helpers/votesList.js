@@ -1,6 +1,6 @@
 Template.votesList.helpers({
 	voteTitle: function() {
-return VotesCollection.find({}, {sort: {totalvotes: -1}});
+return VotesCollection.find({}, {sort: {totalVotes: -1}});
 		}
 });
 
