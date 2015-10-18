@@ -67,10 +67,27 @@ Template.signup.events({
 
 },
     'click #toLast': function () {
+        e.preventDefault();
+        //Block Display
         Session.set('finalPage', 'block');
         Session.set('aecinput', 'none');
         Session.set('aecconfirm', 'none');
         Session.set('aeciframe', 'none');
+        //Build User Profile Data
+        var profileData = {
+          givenName: $(e.target).find('[name=givenName]').val(),
+          familyName: $(e.target).find('[name=familyName]').val(),
+          federalDivision: $(e.target).find('[name=federalDivision]').val(),
+          stateDistrict: $(e.target).find('[name=stateDistrict]').val(),
+          localCouncil: $(e.target).find('[name=localCouncil]').val(),
+          locality: $(e.target).find('[name=locality]').val(),
+          ward: $(e.target).find('[name=ward]').val()
+        };
+        Meteor.call('profileInsert', profileData, function(error, result) { // display the error to the user and abort
+            if (error)
+                return alert(error.reason);
+            Router.go('profilePage', {_id: result._id});
+        });
 
     }
 });
