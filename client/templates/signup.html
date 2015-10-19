@@ -14,18 +14,19 @@
     <div id="aecdatainput" style="display: {{display 'aecinput'}}">
         <h2>Paste Text Here</h2>
         Note: Attempting to register as someone other than yourself results in serious consequences for the individuals and organisations involved.
-    <form class="main form page">
+    <form class="main form usertext" id="usertext">
         <textarea name="usertext" id="usertext" value="" placeholder="Paste text from previous step into this box." class="form-control usertext" rows="6"></textarea>
-        <div class="btn btn-primary" id="p1" style="float: left; margin-right: 10px;">Go Back</div><input type="submit" value="Submit" class="btn btn-primary"/>
+        <div class="btn btn-default" id="p1" style="float: left; margin-right: 10px;">Go Back</div><input type="submit" value="Submit" class="btn btn-primary"/>
     </form>
 
     </div>
     <div id="dispayaecdata" style="display: {{display 'aecconfirm'}}">
         <h2>Your Registered Details</h2>
         <div id="userdata">
-            <form class="main form signup">
+            <form class="main form signup" id="sendData">
+                <label class="control-label" for="title"></label>
                 <h5>Given Name(s)</h5>
-                <input style="" maxlength="50" name="givenName" id="givenName" type="text" value="{{data 'givenName'}}" class="form-control" readonly/>
+                <input style="" maxlength="50" name="givenName" id="givenName" type="text" value="{{data 'givenName'}}" class="form-control"/>
                 <h5>Family Name</h5>
                 <input style="" maxlength="50" name="familyName" id="familyName" type="text" value="{{data 'familyName'}}" class="form-control" readonly/>
                 <h5>Your Federal Division or Seat</h5>
@@ -39,7 +40,7 @@
                 <h5>Your Electoral Ward</h5>
                 <input style="" maxlength="50" name="ward" id="ward" type="text" value="{{data 'ward'}}" class="form-control" readonly/>
                 <br />
-                <div class="btn btn-primary" id="toLast" style="float: right;">Next</div>
+                <input type="submit" value="Submit" class="btn btn-primary"/>
             </form>
         </div>
 
@@ -50,7 +51,7 @@
         <h2>Thank you for registering</h2>
        <p> Your Electoral Roll details will be further verified by a Justice of the Peace, no further action is required by you.
         In the event of any discrepencies, you will be contacted at your registered email address.</p>
-        <p>You may now vote on PopVote, if your details cannot be verified your votes will be removed.</p>
+        <p>You may now vote on PopVote, if your details cannot be verified your votes will be removed and an investigation will be conducted by the community.</p>
         <div class="btn btn-primary" id="votesList" style="float: right;">Start Voting</div>
 
     </div>

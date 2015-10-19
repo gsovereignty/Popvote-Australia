@@ -19,7 +19,7 @@ Template.signup.events({
         Session.set('aecinput', 'none');
     },
 
-    'submit form': function(e) {
+    'submit #usertext': function(e) {
         e.preventDefault();
         var textdata = $(e.target).find('[name=usertext]').val();
         if (textdata.indexOf("Given names") >=0){
@@ -66,7 +66,7 @@ Template.signup.events({
 
 
 },
-    'click #toLast': function () {
+    'submit #sendData': function (e) {
         e.preventDefault();
         //Block Display
         Session.set('finalPage', 'block');
@@ -83,10 +83,13 @@ Template.signup.events({
           locality: $(e.target).find('[name=locality]').val(),
           ward: $(e.target).find('[name=ward]').val()
         };
+
         Meteor.call('profileInsert', profileData, function(error, result) { // display the error to the user and abort
-            if (error)
+            if (error) {
                 return alert(error.reason);
-            Router.go('profilePage', {_id: result._id});
+            } else alert(result)
+
+
         });
 
     }
