@@ -57,6 +57,8 @@ Template.signup.events({
                 Session.set('ward', temp[1].trim());
             };
 
+            //Add something to grab State code.
+
             Session.set('aecinput', 'none');
             Session.set('aecconfirm', 'block');
 

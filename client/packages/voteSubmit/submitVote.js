@@ -22,7 +22,8 @@ Template.submitVote.rendered = function() {
         //Get User Data
         if (Meteor.user().profile.aecData) {
             userId = Meteor.user().profile.aecData;
-            userData = AECData.findOne({_id: userId}, {})
+            userData = AECData.findOne({_id: userId}, {});
+            council = userData.localCouncil;
     } else {alert("Your electoral roll details have not been registered.")}
 
     }
@@ -53,7 +54,7 @@ Template.submitVote.events({
         Session.set('councilButton', 'btn-primary');
         Session.set('parliamentButton', 'btn-default');
         Session.set('stateButton', 'btn-default');
-        jurisname = Meteor.user().profile.council;
+        jurisname = council;
         juristype = "council";
     },
     'click #official': function () {
