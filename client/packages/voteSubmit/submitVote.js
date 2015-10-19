@@ -19,6 +19,11 @@ Template.submitVote.rendered = function() {
         Session.set('parliamentButton', 'btn-default');
         Session.set('officialButton', 'btn-default');
         Session.set('nonOfficialButton', 'btn-default');
+        //Get User Data
+        if (Meteor.user().profile.aecData) {
+            userId = Meteor.user().profile.aecData;
+            userData = AECData.findOne({_id: userId}, {})
+    } else {alert("Your electoral roll details have not been registered.")}
 
     }
 };
