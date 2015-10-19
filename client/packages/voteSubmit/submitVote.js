@@ -90,12 +90,12 @@ Template.submitVote.events({
     e.preventDefault();
     var vote = {
         title: $(e.target).find('[name=title]').val(),
-        officiallink: $(e.target).find('[name=officiallink]').val(),
+        officialLink: $(e.target).find('[name=officiallink]').val(),
         problem: $(e.target).find('[name=problem]').val(),
-        votebody: $(e.target).find('[name=votebody]').val(),
+        voteBody: $(e.target).find('[name=votebody]').val(),
         isofficial: official,
-        juristype: juristype,
-        jurisname: jurisname
+        jurisType: juristype,
+        jurisName: jurisname
 
     };
 
