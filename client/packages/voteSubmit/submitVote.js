@@ -25,6 +25,11 @@ Template.submitVote.rendered = function() {
             council = result;}
         });
 
+        Meteor.call('profileData', 'stateCode', function(error, result) { if (error){
+            throwError(error.reason); } else {
+            stateCode = result;}
+        });
+
     }};
 
 Template.submitVote.events({
@@ -34,7 +39,7 @@ Template.submitVote.events({
         Session.set('parliamentButton', 'btn-primary');
         Session.set('stateButton', 'btn-default');
         Session.set('councilButton', 'btn-default');
-        jurisname = "The Australian Nation";
+        jurisname = "National";
         juristype = "national";
     },
     'click #mystate': function () {
@@ -43,7 +48,7 @@ Template.submitVote.events({
         Session.set('stateButton', 'btn-primary');
         Session.set('parliamentButton', 'btn-default');
         Session.set('councilButton', 'btn-default');
-        jurisname = Meteor.user().profile.state;
+        jurisname = stateCode;
         juristype = "state";
     },
     'click #mycouncil': function () {

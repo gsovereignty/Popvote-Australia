@@ -5,10 +5,10 @@
 
 <template name="voteInspector">
    <div id="authordetails"> {{author}} created this vote {{livestamp submitted}}.</div><br />
-    <div id="votecounts">YES VOTES: {{yesvotes}} | DONKEY VOTES: {{donkeyvotes}} | NO VOTES: {{novotes}}</div><br />
-    <div id="votejurisdiction">VOTE JURISDICTION: {{jurisdiction}}</div><br />
-    <div id="officialdata"> <a href="{{officiallink}}">Official Link ({{officiallink}})</a></div><br />
-    <div id="votedescription">Heading: {{title}}<br />Problem: {{problem}} <br /> Full Text: {{votebody}} Summary: {{summary}}</div>
+    <div id="votecounts">YES VOTES: {{yesVotes}} | DONKEY VOTES: {{donkeyvotes}} | NO VOTES: {{noVotes}}</div><br />
+    <div id="votejurisdiction">VOTE JURISDICTION: {{jurisName}}</div><br />
+    <div id="officialdata"> <a href="{{officialLink}}">Official Link ({{officialLink}})</a></div><br />
+    <div id="votedescription">Heading: {{title}}<br />Problem: {{problem}} <br /> Full Text: {{voteBody}}</div>
 </template>
 
 <template name="voteComments">

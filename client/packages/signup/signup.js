@@ -63,35 +63,35 @@ Template.signup.events({
         for (var i = 0; i < localityarray.length; i++) {
 
             if (localityarray[i] === 'NSW') {
-                Session.set('state', localityarray[i]);
+                Session.set('state', localityarray[i].trim());
             };
 
             if (localityarray[i] === 'VIC') {
-                Session.set('state', localityarray[i]);
+                Session.set('state', localityarray[i].trim());
             };
 
             if (localityarray[i] === 'QLD') {
-                Session.set('state', localityarray[i]);
+                Session.set('state', localityarray[i].trim());
             };
 
             if (localityarray[i] === 'SA') {
-                Session.set('state', localityarray[i]);
+                Session.set('state', localityarray[i].trim());
             };
 
             if (localityarray[i] === 'WA') {
-                Session.set('state', localityarray[i]);
+                Session.set('state', localityarray[i].trim());
             };
 
             if (localityarray[i] === 'NT') {
-                Session.set('state', localityarray[i]);
+                Session.set('state', localityarray[i].trim());
             };
 
             if (localityarray[i] === 'ACT') {
-                Session.set('state', localityarray[i]);
+                Session.set('state', localityarray[i].trim());
             };
 
             if (localityarray[i] === 'TAS') {
-                Session.set('state', localityarray[i]);
+                Session.set('state', localityarray[i].trim());
             };
         }
 
@@ -117,7 +117,7 @@ Template.signup.events({
           localCouncil: $(e.target).find('[name=localCouncil]').val(),
           locality: $(e.target).find('[name=locality]').val(),
           ward: $(e.target).find('[name=ward]').val(),
-          state: $(e.target).find('[name=state]').val()
+          stateCode: $(e.target).find('[name=state]').val()
         };
 
         Meteor.call('profileInsert', profileData, function(error, result) { // display the error to the user and abort
