@@ -57,25 +57,58 @@ Template.signup.events({
                 Session.set('ward', temp[1].trim());
             };
 
-            //Add something to grab State code.
-
-            Session.set('aecinput', 'none');
-            Session.set('aecconfirm', 'block');
-
-
-
         }; } else {alert("The text you pasted did not contain the correct details. Please try again.")};
+        //GET USER'S STATE CODE
+        var localityarray = Session.get('locality').split(" ")
+        for (var i = 0; i < localityarray.length; i++) {
 
+            if (localityarray[i] === 'NSW') {
+                Session.set('state', localityarray[i]);
+            };
+
+            if (localityarray[i] === 'VIC') {
+                Session.set('state', localityarray[i]);
+            };
+
+            if (localityarray[i] === 'QLD') {
+                Session.set('state', localityarray[i]);
+            };
+
+            if (localityarray[i] === 'SA') {
+                Session.set('state', localityarray[i]);
+            };
+
+            if (localityarray[i] === 'WA') {
+                Session.set('state', localityarray[i]);
+            };
+
+            if (localityarray[i] === 'NT') {
+                Session.set('state', localityarray[i]);
+            };
+
+            if (localityarray[i] === 'ACT') {
+                Session.set('state', localityarray[i]);
+            };
+
+            if (localityarray[i] === 'TAS') {
+                Session.set('state', localityarray[i]);
+            };
+        }
+
+        //Block Display
+        Session.set('aecinput', 'none');
+        Session.set('aecconfirm', 'block');
 
 },
     'submit #sendData': function (e) {
-        e.preventDefault();
         //Block Display
         Session.set('finalPage', 'block');
         Session.set('aecinput', 'none');
         Session.set('aecconfirm', 'none');
         Session.set('aeciframe', 'none');
-        //Build User Profile Data
+        // Get State
+        //Build User Profile Data from form
+        e.preventDefault();
         var profileData = {
           givenName: $(e.target).find('[name=givenName]').val(),
           familyName: $(e.target).find('[name=familyName]').val(),
@@ -83,13 +116,14 @@ Template.signup.events({
           stateDistrict: $(e.target).find('[name=stateDistrict]').val(),
           localCouncil: $(e.target).find('[name=localCouncil]').val(),
           locality: $(e.target).find('[name=locality]').val(),
-          ward: $(e.target).find('[name=ward]').val()
+          ward: $(e.target).find('[name=ward]').val(),
+          state: $(e.target).find('[name=state]').val()
         };
 
         Meteor.call('profileInsert', profileData, function(error, result) { // display the error to the user and abort
             if (error) {
                 return alert(error.reason);
-            } else alert(result)
+            }
 
 
         });

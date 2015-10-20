@@ -26,7 +26,7 @@
             <form class="main form signup" id="sendData">
                 <label class="control-label" for="title"></label>
                 <h5>Given Name(s)</h5>
-                <input style="" maxlength="50" name="givenName" id="givenName" type="text" value="{{data 'givenName'}}" class="form-control"/>
+                <input style="" maxlength="50" name="givenName" id="givenName" type="text" value="{{data 'givenName'}}" class="form-control" readonly/>
                 <h5>Family Name</h5>
                 <input style="" maxlength="50" name="familyName" id="familyName" type="text" value="{{data 'familyName'}}" class="form-control" readonly/>
                 <h5>Your Federal Division or Seat</h5>
@@ -37,6 +37,8 @@
                 <input style="" maxlength="50" name="localCouncil" id="localCouncil" type="text" value="{{data 'localCouncil'}}" class="form-control" readonly/>
                 <h5>Your Locality</h5>
                 <input style="" maxlength="50" name="locality" id="locality" type="text" value="{{data 'locality'}}" class="form-control" readonly/>
+                <h5>Your State</h5>
+                <input style="" maxlength="50" name="state" id="state" type="text" value="{{data 'state'}}" class="form-control" readonly/>
                 <h5>Your Electoral Ward</h5>
                 <input style="" maxlength="50" name="ward" id="ward" type="text" value="{{data 'ward'}}" class="form-control" readonly/>
                 <br />
