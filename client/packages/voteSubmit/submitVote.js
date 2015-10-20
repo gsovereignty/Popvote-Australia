@@ -20,14 +20,12 @@ Template.submitVote.rendered = function() {
         Session.set('officialButton', 'btn-default');
         Session.set('nonOfficialButton', 'btn-default');
         //Get User Data
-        if (Meteor.user().profile.aecData) {
-            userId = Meteor.user().profile.aecData;
-            userData = AECData.findOne({_id: userId}, {});
-            council = userData.localCouncil;
-    } else {alert("Your electoral roll details have not been registered.")}
+            Meteor.call('profileData', 'localCouncil', function(error, result) { if (error){
+            throwError(error.reason); } else {
+            council = result;}
+        });
 
-    }
-};
+    }};
 
 Template.submitVote.events({
     'click #parliament': function () {
