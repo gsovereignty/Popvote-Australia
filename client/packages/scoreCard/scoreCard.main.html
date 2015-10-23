@@ -1,26 +1,45 @@
-<template name="scoreCard">
-    <h4>Add a new politician</h4>
-    <form class="main form page"><input maxlength="50" name="name" id="name" type="text" value="" placeholder="Politician Name" class="form-control"/></form>
-    <input type="submit" value="Submit" class="btn btn-primary"/>
+<template name="scoreCard" xmlns="http://www.w3.org/1999/html">
+<h3>Your Representatives </h3>
 <table id="politicians">
     <tr><th>Name</th><th>Indicated</th><th>Actual</th></tr>
 
     {{#each politicians}}
-        <tr><td>{{name}} </td><td><div class="dropup">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                {{indicated}}
+        <tr><td>{{name}} </td><td>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    {{indicated}}
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="indFor">{{name}} said s/he will vote "for"</a></li>
+                    <li><a href="#" class="indAgainst">{{name}} said s/he will vote "against"</a></li>
+                    <li><a href="#" class="indUndecided">{{name}} said s/he is undecided</a></li>
+                </ul>
+            </div>
+        </td><td> <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                {{actual}}
                 <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li><a href="#">Separated link</a></li>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#" class="actFor">{{name}} has voted "for"</a></li>
+                <li><a href="#" class="actAgainst">{{name}} has voted "against"</a></li>
+                <li><a href="#" class="abstained">{{name}} has abstained</a></li>
             </ul>
-        </div> </td> <td>{{actual}} </td><td></td></tr>
+        </div></td></tr>
     {{/each}}
 
 </table>
 
-
+    <h4>Add a new politician</h4>
+    <p>Is there an applicable politician who isn't mentioned above? You can add them now!</p>
+   <form> <div style="width: 400px;">
+        <div class="input-group">
+            <input maxlength="50" name="name" id="name" type="text" class="form-control" placeholder="Enter politician name" />
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">Add</button>
+      </span>
+        </div>
+    </div>
+   </form>
 </template>

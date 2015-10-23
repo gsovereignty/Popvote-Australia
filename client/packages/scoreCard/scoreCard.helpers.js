@@ -1,15 +1,15 @@
 Template.scoreCard.helpers ({
     politicians: function () {
-        return Polivote.find();
+        return Polivote.find({voteId: this._id}, {});
     },
 
     indicated: function () {
-        var max = Math.max(this.indicatedYes, this.indicatedNo, this.indicatedUnsure);
-        var total = this.indicatedYes + this.indicatedNo + this.indicatedUnsure;
+        var max = Math.max(this.indicatedFor, this.indicatedAgainst, this.indicatedUnsure);
+        var total = this.indicatedFor + this.indicatedAgainst + this.indicatedUnsure;
         var average = total / 3;
-        if (this.indicatedYes === max && this.indicatedYes > average) {
+        if (this.indicatedFor === max && this.indicatedFor > average) {
             return "YES";
-        } else if (this.indicatedNo === max && this.indicatedNo > average) {
+        } else if (this.indicatedAgainst === max && this.indicatedAgainst > average) {
             return "NO";
         } else if (this.indicatedUnsure === max && this.indicatedUnsure > average) {
             return "Undecided";
@@ -17,15 +17,15 @@ Template.scoreCard.helpers ({
             return "Not enough data";
         }},
     actual: function () {
-        var max = Math.max(this.votedYes, this.votedNo, this.abstained);
-        var total = this.votedYes + this.votedNo + this.abstained;
+        var max = Math.max(this.votedFor, this.votedAgainst, this.abstained);
+        var total = this.votedFor + this.votedAgainst + this.abstained;
         var average = total / 3;
-        if (this.votedYes === max && this.votedYes > average) {
+        if (this.votedFor === max && this.votedFor > average) {
             return "YES";
-        } else if (this.votedNo === max && this.votedNo > average) {
+        } else if (this.votedAgainst === max && this.votedAgainst > average) {
             return "NO";
         } else if (this.abstained === max && this.abstained > average) {
-            return "Undecided";
+            return "Abstained";
         } else {
             return "Not enough data";
         }
@@ -45,6 +45,24 @@ Template.scoreCard.events ({
         });
 
         event.target.name.value = "";
-    }});
+    },
+    'click .indFor': function () {
+        Meteor.call('indFor', this._id);
+    },
+    'click .indAgainst': function () {
+        Meteor.call('indAgainst', this._id);
+    },
+    'click .indUnsure': function () {
+        Meteor.call('indUnsure', this._id);
+    },
+    'click .actFor': function () {
+        Meteor.call('actualFor', this._id);
+    },
+    'click .actAgainst': function () {
+        Meteor.call('actualAgainst', this._id);
+    },
+    'click .abstained': function () {
+        Meteor.call('abstained', this._id);
+    }
 
-
+});
