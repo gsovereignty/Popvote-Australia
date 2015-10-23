@@ -1,5 +1,5 @@
 Template.votesList.helpers({
-	voteTitle: function() {
+	vote: function() {
 return VotesCollection.find({}, {sort: {totalVotes: -1}});
 		}
 });
