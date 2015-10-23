@@ -5,10 +5,25 @@
     <div class="favourite">&#9734;</div>
     <div class="comments"><a href="{{pathFor 'commentList'}}"><i class="fa fa-comment-o"></i></a> </div>
     <div class="info"><a href="{{pathFor 'voteInfoPage'}}"><i class="fa fa-info"></i></a></div>
-    <div class="report"> <img src="cop.png" width="20px;" height="auto;" /></div>
+
+
+    <div class="report">
+        <i class="fa fa-exclamation-circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        </i>
+        <ul class="dropdown-menu">
+            <li><b>Report this vote</b></li>
+            <li><a href="#" class="duplicate">Duplicate vote</a></li>
+            <li><a href="#" class="duplicate">Wrong catagory</a></li>
+            <li><a href="#" class="spam">Spam/Swearing/other</a></li>
+        </ul>
+    </div>
+
+
+
     <div class="voteno"><a href="#" class="novote">VOTE NO</a> ({{noVotes}})</div>
     <div class="voteyes"><a href="#" class="yesvote">VOTE YES</a> ({{yesVotes}})</div>
 
 </div>
 
 </template>
+

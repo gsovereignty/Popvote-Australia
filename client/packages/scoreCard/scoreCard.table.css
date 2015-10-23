@@ -1,7 +1,12 @@
 #politicians {table-layout: auto;}
 td {
     padding: 5px;
+
 }
 th {
     padding: 5px;
+    font-size: medium;
+    text-align: left;
+    color: darkred;
+
 }

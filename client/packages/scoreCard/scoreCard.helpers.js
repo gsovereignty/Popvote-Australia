@@ -34,6 +34,8 @@ Template.scoreCard.helpers ({
         var max = Math.max(this.votedFor, this.votedAgainst, this.abstained, this.indicatedFor, this.indicatedAgainst, this.indicatedUnsure);
         if (this.flags > 3 && this.flags > max) {
             return "none";
+        } else if (_.include(this.flaggers, Meteor.userId())) {
+            return "none";
         } else {}
     }
 });
