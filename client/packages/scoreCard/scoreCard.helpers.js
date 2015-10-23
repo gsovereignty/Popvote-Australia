@@ -29,7 +29,14 @@ Template.scoreCard.helpers ({
         } else {
             return "Not enough data";
         }
-}});
+},
+    display: function(){
+        var max = Math.max(this.votedFor, this.votedAgainst, this.abstained, this.indicatedFor, this.indicatedAgainst, this.indicatedUnsure);
+        if (this.flags > 3 && this.flags > max) {
+            return "none";
+        } else {}
+    }
+});
 
 Template.scoreCard.events ({
     'submit form': function(e, template) {
@@ -61,8 +68,8 @@ Template.scoreCard.events ({
     'click .actAgainst': function () {
         Meteor.call('actualAgainst', this._id);
     },
-    'click .abstained': function () {
-        Meteor.call('abstained', this._id);
+    'click .flag': function () {
+        Meteor.call('flag', this._id);
     }
 
 });
