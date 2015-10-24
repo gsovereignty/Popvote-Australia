@@ -23,14 +23,16 @@ Template.voteItem.helpers({
         var novotes = this.noVotes;
         var yesvotes = this.yesVotes;
         var total = novotes + yesvotes;
-        return novotes / total * 100;
+        var pc = novotes / total * 100;
+        return Math.floor(pc);
     },
     yesvotes: function () {
 
         var novotes = this.noVotes;
         var yesvotes = this.yesVotes;
         var total = novotes + yesvotes;
-        return yesvotes / total * 100;
+        var pc = yesvotes / total * 100;
+        return Math.ceil(pc);
     }
 });
 
