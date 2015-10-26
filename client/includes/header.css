@@ -12,3 +12,9 @@
     width:402px;
     overflow: visible;
 }
+
+#loginbuttons {
+    display:inline;
+}
+#loginbuttons li {
+    display: inline;}
