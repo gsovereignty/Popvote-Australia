@@ -70,6 +70,9 @@ Template.scoreCard.events ({
     'click .actAgainst': function () {
         Meteor.call('actualAgainst', this._id);
     },
+    'click .abstained': function () {
+        Meteor.call('abstained', this._id);
+    },
     'click .flag': function () {
         Meteor.call('flag', this._id);
     }
