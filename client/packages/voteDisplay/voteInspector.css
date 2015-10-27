@@ -26,3 +26,9 @@
 
 div.controls input {margin-bottom: 5px; width: 600px;}
 div.controls textarea {margin-bottom: 5px; width: 600px;}
+
+#voteinfo {
+width:402px;
+overflow: visible;
+border-style: dashed;
+border-width: thin;}

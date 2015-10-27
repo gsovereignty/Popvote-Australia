@@ -9,10 +9,6 @@
 #yield {
     margin-left: 10px;
     margin-right: 5px;
-    width:402px;
-    overflow: visible;
-    border-style: dashed;
-    border-width: thin;
 }
 
 #loginbuttons {
