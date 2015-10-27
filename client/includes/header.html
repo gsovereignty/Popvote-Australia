@@ -1,5 +1,19 @@
 <template name="header">
 
-      <div id="headdata">  <a href="{{pathFor 'votesList'}}">All Votes</a> | <a href="{{pathFor 'signup'}}">Register</a> | <a href="{{pathFor 'submitVote'}}">Create a New Vote</a>  |  <a href="https://github.com/gazhayes/popvote">GitHub</a> | <div id="loginbuttons">User Account: {{> loginButtons}} </div></div>
+
+
+      <div id="headdata">
+          <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Menu
+              <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="{{pathFor 'votesList'}}">All votes</a></li>
+              <li><a href="{{pathFor 'signup'}}">Register to vote</a></li>
+              <li><a href="{{pathFor 'submitVote'}}">Create a new vote</a></li>
+          </ul><a href="https://github.com/gazhayes/popvote">GitHub</a> | <div id="loginbuttons">User Account: {{> loginButtons}} </div>
+           </div>
+      </div>
 
 </template>
