@@ -63,13 +63,13 @@ div.favourite:hover {opacity: 1;
 /*---Voting Tabs/Sections/Swipe---*/
 div.voteyes {
     position:absolute;
-    bottom: 20px;right:16px;
+    bottom: 26px;right:8px;
     font-size: 12px;
     text-align: center;
     width:58px;
 }  div.voteno {position:absolute;
-    bottom: 20px;
-    left:16px;
+    bottom: 26px;
+    left:8px;
     font-size: 12px;
     text-align: center;
     width:58px;
