@@ -6,14 +6,12 @@
 
 <template name="voteInspector">
 
-   <div id="authordetails"> {{author}} created this vote {{livestamp submitted}}.</div><br />
-    <div id="votecounts">YES VOTES: {{yesVotes}} | NO VOTES: {{noVotes}}</div><br />
-    <div id="votejurisdiction">VOTE JURISDICTION: {{jurisName}}</div><br />
-    <div id="officialdata"> <a href="{{officialLink}}">Official Link ({{officialLink}})</a></div><br />
-    <div id="votedescription">Heading: {{title}}<br />Problem: {{problem}} <br /> Full Text: {{voteBody}}</div>
+<h4>Vote Statistics</h4>
+    <div id="votecounts">Votes Against: {{noVotes}}<br />Votes For: {{yesVotes}}<br /> </div>
+<h4>Vote Details</h4>
+    <div id="votejurisdiction"><u>Vote Jurisdiction:</u> {{jurisName}}</div>
+    <div id="officialdata"> <a href="{{officialLink}}">Official Link ({{officialLink}})</a></div> <!-- Make hidden when not official !-->
+    <div id="votedescription"><u>Why a decision is needed:</u> {{problem}} <!-- Make hidden when official !--> <br /><u>Further details:</u> {{voteBody}}</div>
+    <div id="authordetails">This vote was created by <i>{{author}}</i> {{livestamp submitted}}.</div>
 
-</template>
-
-<template name="voteComments">
-    Vote Comments Template
 </template>

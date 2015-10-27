@@ -1,5 +1,5 @@
 #headdata {
-    width: 100%;
+    width: 402px;
     height: 20px;
     display: block;
     margin-left: 10px;
@@ -11,6 +11,8 @@
     margin-right: 5px;
     width:402px;
     overflow: visible;
+    border-style: dashed;
+    border-width: thin;
 }
 
 #loginbuttons {

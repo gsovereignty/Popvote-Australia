@@ -1,27 +1,27 @@
 #authordetails {
-    display: inline-block;
-    margin-bottom: 10px;
+    display: block;
+    margin-bottom: 4px;
 
 }
 
 #votecounts {
-    display: inline-block;
-    margin-bottom: 10px;
+    display: block;
+    margin-bottom: 4px;
 }
 
 #votejurisdiction {
-    display: inline-block;
-    margin-bottom: 10px;
+    display: block;
+    margin-bottom: 4px;
 }
 
 #officialdata {
-    display: inline-block;
-    margin-bottom: 10px;
+    display: block;
+    margin-bottom: 4px;
 }
 
 #votedescription {
-    display: inline-block;
-    margin-bottom: 10px;
+    display: block;
+    margin-bottom: 4px;
 }
 
 div.controls input {margin-bottom: 5px; width: 600px;}
