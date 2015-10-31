@@ -77,31 +77,31 @@ Template.scoreCard.events ({
 
         Meteor.call('polivoteInsert', polivote, function(error, result) { // display the error to the user and abort
             if (error)
-                return alert(error.reason);
+            sAlert.error(error.reason, {});
         });
 
         event.target.name.value = "";
     },
     'click .indFor': function () {
-        Meteor.call('indFor', this._id);
+        Meteor.call('indFor', this._id, function(error, result) {if (error) {sAlert.error(error.reason)} else {sAlert.info('Your feedback has been recorded', {})}});
     },
     'click .indAgainst': function () {
-        Meteor.call('indAgainst', this._id);
+        Meteor.call('indAgainst', this._id, function(error, result) {if (error) {sAlert.error(error.reason)} else {sAlert.info('Your feedback has been recorded', {})}});
     },
     'click .indUnsure': function () {
-        Meteor.call('indUnsure', this._id);
+        Meteor.call('indUnsure', this._id, function(error, result) {if (error) {sAlert.error(error.reason)} else {sAlert.info('Your feedback has been recorded', {})}});
     },
     'click .actFor': function () {
-        Meteor.call('actualFor', this._id);
+        Meteor.call('actualFor', this._id, function(error, result) {if (error) {sAlert.error(error.reason)} else {sAlert.info('Your feedback has been recorded', {})}});
     },
     'click .actAgainst': function () {
-        Meteor.call('actualAgainst', this._id);
+        Meteor.call('actualAgainst', this._id, function(error, result) {if (error) {sAlert.error(error.reason)} else {sAlert.info('Your feedback has been recorded', {})}});
     },
     'click .abstained': function () {
-        Meteor.call('abstained', this._id);
+        Meteor.call('abstained', this._id, function(error, result) {if (error) {sAlert.error(error.reason)} else {sAlert.info('Your feedback has been recorded', {})}});
     },
     'click .flag': function () {
-        Meteor.call('flag', this._id);
+        Meteor.call('flag', this._id, function(error, result) {if (error) {sAlert.error(error.reason)} else {sAlert.info('Your feedback has been recorded', {})}});
     }
 
 });
