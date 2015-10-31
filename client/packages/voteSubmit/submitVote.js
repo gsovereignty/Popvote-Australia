@@ -109,9 +109,11 @@ Template.submitVote.events({
     };
 
     Meteor.call('voteInsert', vote, function(error, result) { // display the error to the user and abort
-        if (error)
-            return alert(error.reason);
+        if (error) {sAlert.error(error.reason);
+        } else {
+        sAlert.info('Your vote item has been created', {});
         Router.go('voteInfoPage', {_id: result._id});
+        }
     });
 
 
