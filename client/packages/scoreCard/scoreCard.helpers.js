@@ -41,7 +41,7 @@ Template.scoreCard.helpers ({
         } else if (this.indicatedUnsure === max && this.indicatedUnsure > average) {
             return "";
         } else {
-            return "fa fa-exclamation-circle";
+            return "fa fa-question-circle";
         }},
     actualicon: function () {
         var max = Math.max(this.votedFor, this.votedAgainst, this.abstained);
@@ -54,7 +54,7 @@ Template.scoreCard.helpers ({
         } else if (this.abstained === max && this.abstained > average) {
             return "";
         } else {
-            return "fa fa-exclamation-circle";
+            return "fa fa-question-circle";
         }
     },
     display: function(){
