@@ -15,6 +15,7 @@ meteor run
 Anyone can contribute to Popvote. Contributing to Popvote is done using the [Popvote C4](http://popvote.wikidot.com/contributing:c4).
 
 ## License
+![AGPLv3 Logo](http://www.gnu.org/graphics/agplv3-155x51.png)
 
     Popvote - A voting system for Australia written in Meteor.
     Copyright (C) 2015  Gareth Hayes <gareth.hayes@gmail.com>
