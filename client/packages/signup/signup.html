@@ -1,8 +1,9 @@
 <template name="signup">
+    {{#if currentUser}}
     <div name="aeciframe" id="aeciframe" style="display: {{display 'aeciframe'}}">
         Please verify your electoral enrolment with the Australian Electoral Commission below:<br />
         <div style="width: 620px;"><div style="border: solid; border-width: 3px; border-color: red; overflow: hidden; width: 630px;">
-            <iframe scrolling="no" src="https://oevf.aec.gov.au/" style="border: 0px none; margin-left: -20px; height: 1000px; margin-top: -216px; width: 990px;">
+            <iframe scrolling="no" src="https://oevf.aec.gov.au/" style="border: 0px none; margin-left: -20px; height: 1180px; margin-top: -216px; width: 990px;">
             </iframe>
             </div>
             1. Please fill out your details above and click "Verify Enrolment". <br />2. Select all the text inside the red box and copy the text.<br />3. If you have problems verifying your enrolment, please <a href="http://www.aec.gov.au/">visit the AEC for help</a>.
@@ -57,5 +58,11 @@
         <a href="{{pathFor 'votesList'}}"><div class="btn btn-primary" id="votesList" style="float: right;">Start Voting</div></a>
 
     </div>
-
+    {{else}}
+        <div style="width: 200px;">
+        {{> registerForm}}
+        </div>
+    {{/if}}
 </template>
+
+
