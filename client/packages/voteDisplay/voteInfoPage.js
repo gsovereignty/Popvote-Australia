@@ -15,5 +15,11 @@ Template.voteInspector.helpers({
     },
     displaylink: function () {
         if (this.officialLink === "") {return "none"}
+    },
+    displaydetails: function () {
+        if (this.voteBody === "") {return "none"}
+    },
+    displayproblem: function () {
+        if (this.problem === "") {return "none"}
     }
 })

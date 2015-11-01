@@ -13,8 +13,8 @@
 <h4>Vote Details</h4>
     <div id="votejurisdiction"><u>Vote Jurisdiction:</u> {{jurisName}}</div>
     <div id="officialdata" style="display: {{displaylink}}"> <a href="{{officialLink}}">Official Link</a></div> <!-- Make hidden when not official !-->
-    <div id="votedescription"><u>Why a decision is needed:</u> {{problem}} <!-- Make hidden when official !--></div>
-    <div id="details"><u>Further details:</u> {{voteBody}}</div>
+    <div id="votedescription" style="display: {{displayproblem}}"><u>Why a decision is needed:</u> {{problem}} </div>
+    <div id="details" style="display: {{displaydetails}}"><u>Further details:</u> {{voteBody}}</div>
     <div id="authordetails">This vote was created by <i>{{author}}</i> {{livestamp submitted}}.</div>
 
 </template>
