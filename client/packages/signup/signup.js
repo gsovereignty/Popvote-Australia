@@ -5,6 +5,7 @@ Template.signup.rendered = function() {
         Session.set('aecconfirm', 'none');
         Session.set('aeciframe', 'block');
         Session.set('finalPage', 'none');
+        Session.set('aeciframe2', 'none');
 
     }
 }
@@ -13,7 +14,12 @@ Template.signup.events({
     'click #copied': function () {
        Session.set('aeciframe', 'none');
        Session.set('aecinput', 'block');
+        Session.set('aeciframe2', 'none');
    },
+    'click #dev': function () {
+        Session.set('aeciframe2', 'block');
+        sAlert.info('Sample data populated below');
+    },
     'click #p1': function () {
         Session.set('aeciframe', 'block');
         Session.set('aecinput', 'none');
@@ -142,12 +148,3 @@ Template.signup.helpers({
     }
 });
 
-
-Template.register.events({
-    'submit form': function(event){
-        event.preventDefault();
-        var emailVar = event.target.registerEmail.value;
-        var passwordVar = event.target.registerPassword.value;
-        console.log("Form submitted.");
-    }
-});
