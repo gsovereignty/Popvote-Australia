@@ -12,5 +12,8 @@ Template.voteInspector.helpers({
         var yesvotes = this.yesVotes;
         var total = novotes + yesvotes;
         return yesvotes / total * 100;
+    },
+    displaylink: function () {
+        if (this.officialLink === "") {return "none"}
     }
 })

@@ -1,6 +1,7 @@
 #authordetails {
     display: block;
     margin-bottom: 4px;
+    font-size: small;
 
 }
 
@@ -11,17 +12,22 @@
 
 #votejurisdiction {
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 14px;
 }
 
 #officialdata {
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 14px;
 }
 
 #votedescription {
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 14px;
+}
+
+#details {
+    display: block;
+    margin-bottom: 14px;
 }
 
 div.controls input {margin-bottom: 5px; width: 600px;}
