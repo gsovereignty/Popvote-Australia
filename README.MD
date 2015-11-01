@@ -13,5 +13,5 @@ meteor run
 ```
 ## Contributing
 Anyone can contribute to Popvote. Contributing to Popvote is done using the [Popvote C4](http://popvote.wikidot.com/contributing:c4).
-[I'm an inline-style link](https://www.google.com)
+
 
