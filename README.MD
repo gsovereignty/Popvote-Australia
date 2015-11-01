@@ -12,7 +12,7 @@ Once you have Meteor up and running, simply clone this repository and type:
 meteor run
 ```
 ## Contributing
-Anyone can contribute to Popvote. Contributing to Popvote is done using the [Popvote C4](https://github.com/gazhayes/popvote/wiki/Popvote-C4.1).
+Anyone can contribute to Popvote. Contributing to Popvote is done using the [Popvote C4](https://github.com/gazhayes/popvote/wiki/Contributing-Patches).
 
 ## License
 ![AGPLv3 Logo](http://www.gnu.org/graphics/agplv3-155x51.png)
