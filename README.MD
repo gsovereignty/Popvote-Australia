@@ -5,12 +5,12 @@ Popvote aims to keep political leaders honest by removing any ambiguity about wh
 A primary goal of Popvote is to rank all political leaders (council, state, and federal) based on how they perform, thus providing the citizenry with a robust and transparent ranking and performance history when it comes to election time.
 All Popvote users must be registered on the Australian Electoral Roll to prevent fabricated votes.
 ## Building and running
-Popvote is written in (https://www.meteor.com/install)[Meteor].
+Popvote is written in [Meteor]:(https://www.meteor.com/install).
 
 Once you have Meteor up and running, simply clone this repository and type:
 ```
 meteor run
 ```
 ## Contributing
-Anyone can contribute to Popvote. Contributing to Popvote is done using the (http://popvote.wikidot.com/contributing:c4)[Popvote C4].
+Anyone can contribute to Popvote. Contributing to Popvote is done using the [Popvote C4]:(http://popvote.wikidot.com/contributing:c4).
 
