@@ -23,6 +23,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/includes/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="14" column="316" selection-start-line="14" selection-start-column="316" selection-end-line="14" selection-end-column="316" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/packages/login/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="63" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/packages/signup/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.04373178">
+              <caret line="3" column="95" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="submitVote.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/packages/voteSubmit/submitVote.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44159544">
+            <state vertical-scroll-proportion="-17.222221">
               <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
@@ -123,7 +157,6 @@
         <option value="$PROJECT_DIR$/client/packages/voteDisplay/voteItem.js" />
         <option value="$PROJECT_DIR$/client/packages/voteSubmit/submitVote.js" />
         <option value="$PROJECT_DIR$/client/packages/voteDisplay/voteItem.html" />
-        <option value="$PROJECT_DIR$/client/packages/login/login.html" />
         <option value="$PROJECT_DIR$/public/aec.html" />
         <option value="$PROJECT_DIR$/client/packages/signup/signup.js" />
         <option value="$PROJECT_DIR$/lib/collections/profileData.js" />
@@ -132,8 +165,6 @@
         <option value="$PROJECT_DIR$/client/packages/voteDisplay/voteInfoPage.js" />
         <option value="$PROJECT_DIR$/client/packages/voteDisplay/voteInfoPage.html" />
         <option value="$PROJECT_DIR$/client/includes/header.js" />
-        <option value="$PROJECT_DIR$/client/includes/header.html" />
-        <option value="$PROJECT_DIR$/client/packages/signup/signup.html" />
         <option value="$PROJECT_DIR$/LICENSE.MD" />
         <option value="$PROJECT_DIR$/temp" />
         <option value="$PROJECT_DIR$/README.MD" />
@@ -141,6 +172,9 @@
         <option value="$PROJECT_DIR$/client/packages/voteDisplay/votesList.html" />
         <option value="$PROJECT_DIR$/client/includes/spin.html" />
         <option value="$PROJECT_DIR$/lib/routes.js" />
+        <option value="$PROJECT_DIR$/client/includes/header.html" />
+        <option value="$PROJECT_DIR$/client/packages/login/login.html" />
+        <option value="$PROJECT_DIR$/client/packages/signup/signup.html" />
       </list>
     </option>
   </component>
@@ -152,8 +186,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="251" />
-    <option name="y" value="54" />
+    <option name="x" value="664" />
+    <option name="y" value="170" />
     <option name="width" value="1409" />
     <option name="height" value="1177" />
   </component>
@@ -455,7 +489,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="251" y="54" width="1409" height="1177" extended-state="0" />
+    <frame x="664" y="170" width="1409" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -849,28 +883,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19886364">
-          <caret line="14" column="134" selection-start-line="14" selection-start-column="134" selection-end-line="14" selection-end-column="134" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/includes/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.055555556">
           <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/packages/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.014204546">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -890,17 +906,6 @@
           <folding>
             <element signature="n#style#0;n#div#2;n#template#1;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#4;n#template#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/packages/signup/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.041666">
-          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -979,9 +984,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44159544">
+        <state vertical-scroll-proportion="-17.222221">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="316" selection-start-line="14" selection-start-column="316" selection-end-line="14" selection-end-column="316" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/packages/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="63" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/packages/signup/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04373178">
+          <caret line="3" column="95" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
