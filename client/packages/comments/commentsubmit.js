@@ -1,4 +1,5 @@
-Template.commentSubmit.helpers({ errorMessage: function(field) {
+Template.commentSubmit.helpers({
+    errorMessage: function(field) {
     return Session.get('commentSubmitErrors')[field]; },
     errorClass: function (field) {
         return !!Session.get('commentSubmitErrors')[field] ? 'has-error' : '';

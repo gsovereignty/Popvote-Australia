@@ -1,0 +1,25 @@
+<template name="newSubvote">
+    {{> voteItem}}
+    <hr />
+    {{#if currentUser}}
+        {{> subvoteSubmit}}
+    {{else}}
+        <p>Please log in to leave a comment.</p>
+    {{/if}}
+
+</template>
+
+<template name="subvoteSubmit">
+    <h3>Create a new subvote for this item</h3>
+    <form class="main form page">
+        <div class="form-group">
+            <label class="control-label" for="title"></label>
+            <div class="controls">
+                <input maxlength="175" name="subvoteTitle" id="subvoteTitle" type="text" value="" placeholder="Create a title for your subvote" class="form-control"/>
+                <textarea name="subvoteDescription" id="subvoteDescription" value="" placeholder="Add a description to explain what people are voting on (optional)" class="form-control" rows="6"></textarea>
+            </div>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+
+    </form>
+</template>

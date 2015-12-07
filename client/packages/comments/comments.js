@@ -1,4 +1,5 @@
-Template.commentList.helpers({ comments: function() {
+Template.commentList.helpers({
+    comments: function() {
     return Comments.find({voteId: this._id}, {sort: {commentLikes: -1}});
     }
 });

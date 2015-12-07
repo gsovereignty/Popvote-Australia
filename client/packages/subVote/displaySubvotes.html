@@ -1,0 +1,14 @@
+<template name="displaySubvotes">
+    {{>newSubvote}}
+    <hr />
+    {{#each subvote}}
+        {{>subvoteItem}}
+    {{/each}}
+</template>
+
+
+<template name="subvoteItem">
+    Name: {{subvoteTitle}} <br />
+    Description: {{subvoteDescription}}
+    <hr />
+</template>

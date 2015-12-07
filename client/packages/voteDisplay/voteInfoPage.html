@@ -7,9 +7,10 @@
 </template>
 
 <template name="voteInspector">
-
+    <div id="subvotes"><a href="{{pathFor 'newSubvote'}}">Create new subvote</a><br /> </div>
 <h4>Vote Statistics</h4>
     <div id="votecounts">Votes Against: {{noVotes}}<br />Votes For: {{yesVotes}}<br /> </div>
+
 <h4>Vote Details</h4>
     <div id="votejurisdiction"><u>Vote Jurisdiction:</u> {{jurisName}}</div>
     <div id="officialdata" style="display: {{displaylink}}"> <a href="{{officialLink}}">Official Link</a></div> <!-- Make hidden when not official !-->
