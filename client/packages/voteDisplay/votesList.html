@@ -1,6 +1,30 @@
 <template name="votesList">
-    <h3>Current Votes</h3>
-    {{#each vote}}
-        {{> voteItem}}
-    {{/each}}
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8"> <h3>Available Votes</h3></div>
+
+</div>
+    <div class="row">
+    <div class="col-md-2">
+        Sidebar content <br />
+        Sidebar content <br />
+        Sidebar content <br />
+        Sidebar content <br />
+        Sidebar content <br />
+        Sidebar content <br />
+        Sidebar content <br />
+        Sidebar content <br />
+        Sidebar content <br />
+    </div>
+
+    <div class="col-xs-12 col-md-8">
+
+        {{#each vote}}
+            {{> voteItem}}
+        {{/each}}
+</div>
+    </div>
+
+
+
 </template>

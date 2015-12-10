@@ -25,27 +25,26 @@ div.meta {float:right;font-size: small;margin-right: 4px;}
 
 /*---Action Icons Normal---*/
 div.info {opacity: 0.5;
-    position: absolute;
+
     bottom:24px;
     left: 80px;
     font-size: 18px;}
 div.comments {opacity: 0.5;
-    position: absolute;
+
     bottom:26px;
     left: 110px;
     font-size: large;}
 div.report {opacity: 0.5;
-    position: absolute;
     bottom:26px;
     left: 148px;
     font-size: 18px;}
 div.favourite {opacity: 0.5;
-    position: absolute;
+
     bottom:24px;
     right: 80px;
     font-size: 21px;}
 div.social {opacity: 0.5;
-    position: absolute;
+
     bottom:24px;
     right: 110px;
     font-size: 18px;}
@@ -62,12 +61,12 @@ div.favourite:hover {opacity: 1;
 
 /*---Voting Tabs/Sections/Swipe---*/
 div.voteyes {
-    position:absolute;
+
     bottom: 26px;right:8px;
     font-size: 12px;
     text-align: center;
     width:58px;
-}  div.voteno {position:absolute;
+}  div.voteno {
     bottom: 26px;
     left:8px;
     font-size: 12px;
@@ -75,8 +74,8 @@ div.voteyes {
     width:58px;
 }
 div.progress {
-    position:absolute;
-    bottom: -20px;right:0px;
-    width:400px;
+    display:block;
+    margin-top: 8px;
+    margin-bottom: 8px;
 
 }

@@ -3,4 +3,3 @@ Template.votesList.helpers({
 return VotesCollection.find({}, {sort: {totalVotes: -1}});
 		}
 });
-

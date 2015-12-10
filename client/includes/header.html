@@ -13,7 +13,11 @@
               <li><a href="{{pathFor 'signup'}}">Register to vote</a></li>
               <li><a href="{{pathFor 'submitVote'}}">Create a new vote</a></li>
           </ul><a href="https://github.com/gazhayes/popvote">GitHub</a><div id="loginbuttons" style="display: {{displayRegister}}"> | <a href="{{pathFor 'signup'}}">Register to vote</a> {{#if currentUser}}{{else}}| <a href="{{pathFor 'loginpage'}}">Login</a>{{/if}}</div><div id="loginbuttons">{{#if currentUser}} | {{> loginButtons}}{{/if}}</div>
-           </div>
+           {{>heading}}</div>
       </div>
 
+</template>
+
+<template name="heading">
+    {{heading}}
 </template>

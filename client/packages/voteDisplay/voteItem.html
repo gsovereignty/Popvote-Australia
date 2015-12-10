@@ -1,33 +1,62 @@
 <template name="voteItem">
-<div id="votebox" class="{{jurisType}}">
-    <div class="meta">{{jurisName}} <a href="{{officialLink}}">{{officialStatus}}</a></div>
-    <div class="title">{{title}}</div>
-    <div class="favourite">&#9734;</div>
-    <div class="comments"><a href="{{pathFor 'commentList'}}"><i class="fa fa-comment-o"></i></a> </div>
-    <div class="info"><a href="{{pathFor 'voteInfoPage'}}"><i class="fa fa-info"></i></a></div>
 
-
-    <div class="report">
-        <i class="fa fa-exclamation-circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        </i>
-        <ul class="dropdown-menu">
-            <li><b>Report this vote</b></li>
-            <li><a href="#" class="duplicate">Duplicate vote</a></li>
-            <li><a href="#" class="duplicate">Wrong catagory</a></li>
-            <li><a href="#" class="spam">Spam/Swearing/other</a></li>
-        </ul>
-    </div>
-
-
-
-    <div class="voteno"><a href="#" class="novote">VOTE NO</a></div>
-    <div class="voteyes"><a href="#" class="yesvote">VOTE YES</a> </div>
-    <div class="progress">
-        <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:{{novotes}}%">
-            {{novotes}}% NO
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{title}}</h3>
         </div>
-        <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width:{{yesvotes}}%">{{yesvotes}}% YES</div>
+        <div class="panel-body">
+            {{voteBody}}
+                   <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:{{novotes}}%">
+                    {{novotes}}% NO
+                </div>
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width:{{yesvotes}}%">{{yesvotes}}% YES</div>
+            </div>
+
+
+        </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-xs-7 col-md-8 pull-left">
+                    <div class="row">
+                <div class="col-xs-1 col-md-1"><div class="favourite">&#9734;</div></div>
+                <div class="col-xs-1 col-md-1"><div class="comments"><a href="{{pathFor 'commentList'}}"><i class="fa fa-comment-o"></i></a> </div></div>
+                <div class="col-xs-1 col-md-1"><div class="info"><a href="{{pathFor 'voteInfoPage'}}"><i class="fa fa-info"></i></a></div></div>
+                <div class="col-xs-1 col-md-1"><div class="report">
+                    <i class="fa fa-exclamation-circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    </i>
+                    <ul class="dropdown-menu">
+                        <li><b>Report this vote</b></li>
+                        <li><a href="#" class="duplicate">Duplicate vote</a></li>
+                        <li><a href="#" class="duplicate">Wrong catagory</a></li>
+                        <li><a href="#" class="spam">Spam/Swearing/other</a></li>
+                    </ul>
+                </div></div></div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 pull-left">
+                        <p><b>Jurisdiction:</b><span class="text-uppercase small"> {{jurisName}} <a href="{{officialLink}}" class="text-capitalize">{{officialStatus}}</a></span></p>
+                        This vote contains x subvotes. <br />
+                        There are x comments on this vote.
+                    </div>
+                </div></div>
+
+
+
+
+
+
+
+                <div class="col-xs-4 col-md-4 text-right"><div class="btn-group-vertical" role="group" aria-label="...">
+                    <button type="button" class="btn btn-info novote">Vote NO</button>
+                    <button type="button" class="btn btn-default">Abstain</button>
+                    <button type="button" class="btn btn-warning yesvote">Vote YES</button>
+                </div></div>
+            </div>
+
+
+        </div>
+
     </div>
-</div>
+
 </template>
 
