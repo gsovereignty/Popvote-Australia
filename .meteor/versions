@@ -37,6 +37,7 @@ email@1.0.8
 fastclick@1.0.7
 fortawesome:fontawesome@4.4.0_1
 geojson-utils@1.0.4
+hitchcott:app-dump@0.4.2
 hot-code-push@1.0.0
 html-tools@1.0.5
 htmljs@1.0.5
@@ -59,6 +60,7 @@ juliancwirko:s-alert@3.1.2
 juliancwirko:s-alert-genie@3.1.2
 lai:collection-extensions@0.1.4
 launch-screen@1.0.4
+less@2.5.1
 liberation:shareit@1.1.1
 livedata@1.0.15
 localstorage@1.0.5
