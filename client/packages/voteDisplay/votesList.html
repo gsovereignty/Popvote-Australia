@@ -1,20 +1,23 @@
 <template name="votesList">
 <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8"> <h3>Available Votes</h3></div>
+    <div class="col-md-3 col-lg-2"></div>
+    <div class="col-md-9 col-lg-10"> <h3>Available Votes</h3></div>
 
 </div>
     <div class="row">
-    <div class="col-md-2">
-        Sidebar content <br />
-        Sidebar content <br />
-        Sidebar content <br />
-        Sidebar content <br />
-        Sidebar content <br />
-        Sidebar content <br />
-        Sidebar content <br />
-        Sidebar content <br />
-        Sidebar content <br />
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2">
+        <b>Sort Votes</b>
+        <div class="btn-group btn-group-sm" role="group">
+            <button type="button" class="btn btn-default">Popularity</button>
+            <button type="button" class="btn btn-default">Freshness</button>
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+               Show items that I've already voted on
+            </label>
+        </div>
     </div>
 
     <div class="col-xs-12 col-md-8">

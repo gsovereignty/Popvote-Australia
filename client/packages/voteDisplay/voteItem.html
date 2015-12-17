@@ -7,10 +7,10 @@
         <div class="panel-body">
             {{voteBody}}
                    <div class="progress">
-                <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:{{novotes}}%">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:{{novotes}}%">
                     {{novotes}}% NO
                 </div>
-                <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width:{{yesvotes}}%">{{yesvotes}}% YES</div>
+                <div class="progress-bar progress-bar-success" style="width:{{yesvotes}}%">{{yesvotes}}% YES</div>
             </div>
 
 
@@ -35,11 +35,10 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-12 pull-left">
                         <!--  <p><b>Jurisdiction:</b><span class="text-uppercase small"> {{jurisName}} <a href="{{officialLink}}" class="text-capitalize">{{officialStatus}}</a></span></p> -->
-                        <img src="/national_xs.png" height="42px" width="auto" />
                         <button class="btn btn-default btn-sm" type="button">
                             Subvotes <span class="badge">4</span>
                         </button>
-                        <button class="btn btn-default btn-sm" type="button">
+                        <button class="btn btn-default btn-sm comments" type="button">
                             Comments <span class="badge">5</span>
                         </button>
                     </div>
@@ -52,9 +51,13 @@
 
 
                 <div class="col-xs-4 col-md-4 text-right"><div class="btn-group-vertical" role="group" aria-label="...">
-                    <button type="button" class="btn btn-info novote">Vote NO</button>
-                    <button type="button" class="btn btn-default">Abstain</button>
-                    <button type="button" class="btn btn-warning yesvote">Vote YES</button>
+                    <button type="button" class="btn btn-danger novote btn-lg">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Vote NO
+                    </button>
+
+                    <button type="button" class="btn btn-success yesvote btn-lg">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Vote YES
+                    </button>
                 </div></div>
             </div>
 

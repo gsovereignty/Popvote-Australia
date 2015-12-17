@@ -7,6 +7,9 @@ Template.voteItem.events({
     'click .novote': function(e) {
         e.preventDefault();
         Meteor.call('voteNo', this._id, function(error, result) {if (error) {sAlert.error(error.reason)} else {sAlert.info('Your vote has been recorded', {})}});
+    },
+    'click .comments': function() {
+        alert("boo");
     }
 
 });
