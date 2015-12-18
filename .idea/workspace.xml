@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="938c595c-c830-41de-9ca6-896ad8e8c415" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/packages/voteSubmit/submitVote.html" afterPath="$PROJECT_DIR$/client/packages/voteSubmit/submitVote.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/packages/voteDisplay/voteItem.html" afterPath="$PROJECT_DIR$/client/packages/voteDisplay/voteItem.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/packages/voteDisplay/voteItem.js" afterPath="$PROJECT_DIR$/client/packages/voteDisplay/voteItem.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/packages/voteDisplay/votesList.html" afterPath="$PROJECT_DIR$/client/packages/voteDisplay/votesList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/packages/voteDisplay/votesList.js" afterPath="$PROJECT_DIR$/client/packages/voteDisplay/votesList.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -29,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="votesList.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="votesList.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/packages/voteDisplay/votesList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="90" selection-start-line="16" selection-start-column="90" selection-end-line="16" selection-end-column="90" />
+            <state vertical-scroll-proportion="0.45553145">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -43,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/lib/collections/votes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="58" selection-start-line="0" selection-start-column="58" selection-end-line="0" selection-end-column="58" />
+              <caret line="49" column="55" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -53,17 +51,17 @@
         <entry file="file://$PROJECT_DIR$/client/packages/voteDisplay/voteItem.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+              <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="votesList.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="votesList.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/packages/voteDisplay/votesList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26726058">
-              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -72,9 +70,11 @@
       <file leaf-file-name="voteItem.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/packages/voteDisplay/voteItem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.75">
-              <caret line="38" column="71" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
-              <folding />
+            <state vertical-scroll-proportion="-1.25">
+              <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,12 +171,12 @@
         <option value="$PROJECT_DIR$/client/includes/mainRender.html" />
         <option value="$PROJECT_DIR$/client/includes/header.css" />
         <option value="$PROJECT_DIR$/client/packages/voteDisplay/voteBox.css" />
-        <option value="$PROJECT_DIR$/client/packages/voteDisplay/voteItem.js" />
         <option value="$PROJECT_DIR$/client/packages/voteSubmit/submitVote.html" />
         <option value="$PROJECT_DIR$/lib/collections/votes.js" />
         <option value="$PROJECT_DIR$/client/packages/voteDisplay/voteItem.html" />
-        <option value="$PROJECT_DIR$/client/packages/voteDisplay/votesList.js" />
         <option value="$PROJECT_DIR$/client/packages/voteDisplay/votesList.html" />
+        <option value="$PROJECT_DIR$/client/packages/voteDisplay/voteItem.js" />
+        <option value="$PROJECT_DIR$/client/packages/voteDisplay/votesList.js" />
       </list>
     </option>
   </component>
@@ -188,8 +188,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="395" />
-    <option name="y" value="235" />
+    <option name="x" value="390" />
+    <option name="y" value="243" />
     <option name="width" value="1360" />
     <option name="height" value="1019" />
   </component>
@@ -539,7 +539,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="395" y="235" width="1360" height="1019" extended-state="0" />
+    <frame x="390" y="243" width="1360" height="1019" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -925,18 +925,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/packages/voteDisplay/voteItem.html">
+    <entry file="file://$PROJECT_DIR$/lib/collections/votes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.75">
-          <caret line="38" column="71" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="55" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/votes.js">
+    <entry file="file://$PROJECT_DIR$/client/packages/voteDisplay/voteItem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="58" selection-start-line="0" selection-start-column="58" selection-end-line="0" selection-end-column="58" />
+        <state vertical-scroll-proportion="-1.25">
+          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/packages/voteDisplay/votesList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
           <folding />
         </state>
       </provider>
@@ -944,23 +954,15 @@
     <entry file="file://$PROJECT_DIR$/client/packages/voteDisplay/voteItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/packages/voteDisplay/votesList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="90" selection-start-line="16" selection-start-column="90" selection-end-line="16" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/packages/voteDisplay/votesList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26726058">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.45553145">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding />
         </state>
       </provider>

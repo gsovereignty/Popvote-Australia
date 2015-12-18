@@ -22,7 +22,11 @@ Template.votesList.events({
     'click .popularity': function() {sortVotes.set({ totalVotes: -1 })
     },
     'click .freshness': function() {sortVotes.set({ submitted: -1 });
-    }
+    },
+    'change [type=checkbox]': function () {
+        var checkedstatus = document.getElementById('showvoted').checked;
+        Session.set("showVoted", checkedstatus);
+        }
 });
 
 Tracker.autorun(function () {

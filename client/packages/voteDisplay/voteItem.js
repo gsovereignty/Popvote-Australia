@@ -36,6 +36,12 @@ Template.voteItem.helpers({
         var total = novotes + yesvotes;
         var pc = yesvotes / total * 100;
         return Math.ceil(pc);
-    }
+    },
+    voteDisplay: function() {if(Session.get("showVoted") !== true){
+        {if(_.include(this.yesVoters, Meteor.userId())) {return "none"}
+        else {if(_.include(this.noVoters, Meteor.userId())) {return "none"} else {return "block"}}
+        }
+    }}
+
 });
 
