@@ -37,11 +37,13 @@ Template.voteItem.helpers({
         var pc = yesvotes / total * 100;
         return Math.ceil(pc);
     },
-    voteDisplay: function() {if(Session.get("showVoted") !== true){
+    voteDisplay: function() {if(Meteor.user() === null){return "block"} else if(Session.get("showVoted") !== true){
         {if(_.include(this.yesVoters, Meteor.userId())) {return "none"}
         else {if(_.include(this.noVoters, Meteor.userId())) {return "none"} else {return "block"}}
         }
-    }}
+    }},
+
+    disabled: function() {if(Meteor.user()){return ""} else {return "disabled"}}
 
 });
 

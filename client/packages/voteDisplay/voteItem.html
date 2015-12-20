@@ -17,10 +17,9 @@
         </div>
         <div class="panel-footer">
             <div class="row">
-                <div class="col-xs-7 col-md-8 pull-left">
+                <div class="col-xs-6 col-md-8 pull-left">
                     <div class="row">
                 <div class="col-xs-1 col-md-1"><div class="favourite">&#9734;</div></div>
-                <div class="col-xs-1 col-md-1"><div class="comments"><a href="{{pathFor 'commentList'}}"><i class="fa fa-comment-o"></i></a> </div></div>
                 <div class="col-xs-1 col-md-1"><div class="info"><a href="{{pathFor 'voteInfoPage'}}"><i class="fa fa-info"></i></a></div></div>
                 <div class="col-xs-1 col-md-1"><div class="report">
                     <i class="fa fa-exclamation-circle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -33,7 +32,7 @@
                     </ul>
                 </div></div></div>
                 <div class="row">
-                    <div class="col-xs-12 col-md-12 pull-left">
+                    <div class="col-xs-2 col-md-12 pull-left">
                         <!--  <p><b>Jurisdiction:</b><span class="text-uppercase small"> {{jurisName}} <a href="{{officialLink}}" class="text-capitalize">{{officialStatus}}</a></span></p> -->
                         <button class="btn btn-default btn-sm" type="button">
                             Subvotes <span class="badge">{{totalVotes}}</span>
@@ -50,15 +49,15 @@
 
 
 
-                <div class="col-xs-4 col-md-4 text-right"><div class="btn-group-vertical" role="group" aria-label="...">
-                    <button type="button" class="btn btn-danger novote btn-lg">
+                <div class="col-xs-6 col-sm-5 col-md-4 text-center pull-right"><div class="btn-group-vertical" role="group" aria-label="...">
+                    <button type="button" class="btn btn-danger novote btn-lg {{disabled}}">
                         <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Vote NO
                     </button>
 
-                    <button type="button" class="btn btn-success yesvote btn-lg">
+                    <button type="button" class="btn btn-success yesvote btn-lg {{disabled}}">
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Vote YES
                     </button>
-                </div></div>
+                </div><p><small><a class="{{disabled}}">Hide this vote</a></small></p></div>
             </div>
 
 

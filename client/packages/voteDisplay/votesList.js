@@ -11,10 +11,10 @@ Template.votesList.helpers({
 return voteList.get()
 		},
     popularityButton: function(){
-        if(sortVotes.get()["totalVotes"]) {return "btn-active"} else {return "btn-default"}
+        if(sortVotes.get()["totalVotes"]) {return "active"} else {return ""}
     },
     freshnessButton: function(){
-        if(sortVotes.get()["submitted"]) {return "btn-active"} else {return "btn-default"}
+        if(sortVotes.get()["submitted"]) {return "active"} else {return ""}
     }
 });
 
