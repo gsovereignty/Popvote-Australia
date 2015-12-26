@@ -2,11 +2,27 @@
  http://html5.litten.com/graphing-data-in-the-html5-canvas-element-part-iv-simple-pie-charts/
  */
 Template.testchart.onRendered(function(){
+    function noVotes(){
+        var novotes = this.noVotes;
+        var yesvotes = this.yesVotes;
+        var total = novotes + yesvotes;
+        var pc = novotes / total * 100;
+        return Math.floor(pc);
+    };
+    function yesVotes(){
+        var novotes = this.noVotes;
+        var yesvotes = this.yesVotes;
+        var total = novotes + yesvotes;
+        var pc = yesvotes / total * 100;
+        return Math.ceil(pc);
+    };
 
-
+    var nopc = noVotes();
+    var yespc = yesVotes();
+    alert(this.noVotes);
 var myColor = ["#39ca74","#e54d42","#f0c330","#3999d8","#35485d"];
-var myData = [80,23,15,7,1];
-var myLabel = ["Hello","Hi","Howdy","Wadup","Yo"];
+var myData = [yesVotes(),noVotes()];
+var myLabel = ["YES","NO"];
 
 function getTotal(){
     var myTotal = 0;
@@ -79,4 +95,21 @@ function getPoint(c1,c2,radius,angle) {
 // The drawing
 plotData();
 
+});
+
+
+Template.stats_chart.onRendered(function () {
+    new Chartist.Line('.ct-chart', {
+        labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        series: [
+            [12, 9, 7, 8, 5],
+            [2, 1, 3.5, 7, 3],
+            [1, 3, 4, 5, 6]
+        ]
+    }, {
+        fullWidth: true,
+        chartPadding: {
+            right: 40
+        }
+    });
 });
