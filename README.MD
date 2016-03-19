@@ -1,7 +1,8 @@
 # POPVOTE
-A reactive and verified voting system for Australia that is easily adaptable to other countries.
+A reactive and verified politician ranking system for Australia that is easily adaptable to other countries.
 ## What
-Popvote aims to keep political leaders honest by removing any ambiguity about what their constituents want them to do.
+Popvote aims to keep political leaders honest by removing any ambiguity about what their constituents want them to do. Constituents vote on issues (and create their own vote items) at all levels of government, and politicians are ranked based on how they perform in comparison to what the people want.
+
 A primary goal of Popvote is to rank all political leaders (council, state, and federal) based on how they perform, thus providing the citizenry with a robust and transparent ranking and performance history when it comes to election time.
 All Popvote users must be registered on the Australian Electoral Roll to prevent fabricated votes.
 ## Building and running
