@@ -1,4 +1,4 @@
-# POPVOTE
+# POPVOTE (Australia)
 A reactive and verified politician *ranking system* for Australia that is easily adaptable to other countries. 
 
 Live prototype: au.popvote.org
